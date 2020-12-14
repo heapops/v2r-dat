@@ -1,7 +1,13 @@
 v2r-dat
 ====
 
-custom site.dat and ip.dat
+geosite.dat and geoip.dat parser
+
+### build
+
+```bash
+go build -o v2r-dat main.go
+```
 
 ### usage
 
@@ -9,9 +15,9 @@ custom site.dat and ip.dat
 ./v2r-dat -h
 Usage of ./v2r-dat:
   -dat string
-        datfile's name (default "geosite.dat")
+        input datfile's name (default "geosite.dat")
   -dir string
-        sites or ips file folder (default "sites")
+        sites or ips output folder (default "sites")
   -ip
-        geoip file format
+        dat is geoip
 ```
